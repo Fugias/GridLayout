@@ -69,7 +69,13 @@ body {
             color: white;
             background-color: $color--yellow--primary;
             cursor: pointer;
+            font-weight: 700;
+            transition: all 0.2s ease-in-out;
         }
+    }
+
+    a:hover {
+        transform: translateY(-3px);
     }
    
 }

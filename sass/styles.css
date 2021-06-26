@@ -124,6 +124,14 @@ body {
   color: white;
   background-color: #c0df34;
   cursor: pointer;
+  font-weight: 700;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.second a:hover {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
 }
 
 .third {
