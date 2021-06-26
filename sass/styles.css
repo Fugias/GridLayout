@@ -80,6 +80,7 @@ body {
 }
 
 .first p {
+  line-height: 2.5rem;
   color: #98a6bd;
 }
 
@@ -136,6 +137,10 @@ body {
 
 .third h2 {
   padding-bottom: 2rem;
+}
+
+.third p {
+  padding-bottom: 0.2rem;
 }
 
 @media (max-width: 600px) {
