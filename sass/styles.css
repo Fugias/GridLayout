@@ -48,7 +48,7 @@ body {
   padding: 10rem 0rem;
   width: 85%;
   margin: 0 auto;
-  max-width: 600px;
+  max-width: 650px;
   display: -ms-grid;
   display: grid;
   grid-auto-rows: 1fr;
