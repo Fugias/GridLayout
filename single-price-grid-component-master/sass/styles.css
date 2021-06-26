@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Karla', sans-serif;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+a {
+  font-size: 1.8rem;
+}
+
+body {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #e5eff5;
+}
+
+.grid {
+  border-radius: 1rem;
+  padding: 10rem 0rem;
+  width: 85%;
+  margin: 0 auto;
+  max-width: 600px;
+  display: -ms-grid;
+  display: grid;
+  grid-auto-rows: 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "first first" "second third";
+}
+
+.grid .box {
+  padding: 3.5rem;
+}
+
+.first {
+  border-radius: 0.5rem 0.5rem 0rem 0rem;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: first;
+  background-color: white;
+}
+
+.first h2 {
+  color: #2ab2af;
+}
+
+.first h3 {
+  padding: 2rem 0rem;
+  color: #c0df34;
+}
+
+.first p {
+  color: #98a6bd;
+}
+
+.second {
+  border-bottom-left-radius: 0.5rem;
+  background-color: #2ab2af;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: second;
+  color: white;
+}
+
+.second p:first-of-type {
+  padding: 2rem 0rem;
+  color: #e5eff5;
+}
+
+.second p:first-of-type span {
+  color: white;
+  font-size: 3rem;
+}
+
+.second .sign {
+  padding-top: 4rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.second .sign a {
+  width: 100%;
+  max-width: 300px;
+  padding: 1.3rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  background-color: #c0df34;
+  cursor: pointer;
+}
+
+.third {
+  border-bottom-right-radius: 0.5rem;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: third;
+  color: white;
+  background-color: #4abebd;
+}
+
+.third h2 {
+  padding-bottom: 2rem;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "first" "second" "third";
+  }
+  .second {
+    border-radius: 0rem;
+  }
+  .third {
+    border-radius: 0rem 0rem 0.5rem 0.5rem;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

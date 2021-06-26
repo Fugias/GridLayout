@@ -1,0 +1,101 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color--gray;
+}
+
+.grid{
+    border-radius: 1rem;
+    padding: 10rem 0rem;
+    width: 85%;
+    margin: 0 auto;
+    max-width: 600px;
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "first first"
+                         "second third";
+        .box {
+             padding: 3.5rem;
+            }
+}
+
+
+.first {
+    border-radius: 0.5rem 0.5rem 0rem 0rem;
+    grid-area: first;
+    background-color: white;
+    h2 {
+        color: $color--cyan--primary;
+    }
+    h3 {
+        padding: 2rem 0rem;
+        color: $color--yellow--primary;
+    }
+
+    p {
+        color: $color--blue--grayish;
+    }
+}
+
+.second {
+    border-bottom-left-radius: 0.5rem;
+    background-color: $color--cyan--primary;
+    grid-area: second;
+    color: white;
+    p:first-of-type {
+        padding: 2rem 0rem;
+        color: $color--gray;
+        span {
+            color: white;
+            font-size: 3rem;
+        }
+    }
+    .sign {
+        padding-top: 4rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        a {
+            width: 100%;
+            max-width: 300px;
+            padding: 1.3rem; 
+            border-radius: 0.5rem;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            background-color: $color--yellow--primary;
+            cursor: pointer;
+        }
+    }
+   
+}
+
+.third {
+    border-bottom-right-radius: 0.5rem;
+    grid-area: third;
+    color: white;
+    background-color: $color--cyanDark--primary;
+    h2 {
+        padding-bottom: 2rem;
+    }
+}
+
+@media (max-width:600px) {
+    .grid {
+        grid-template-columns: 1fr;
+        grid-template-areas:"first"
+                            "second"
+                            "third";
+    }
+
+    .second {
+        border-radius: 0rem;
+    }
+
+    .third {
+        border-radius: 0rem 0rem 0.5rem 0.5rem;
+    }
+}
